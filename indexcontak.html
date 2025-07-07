@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontak Kami - Penjahit Dyos</title>
+  <style>
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Verdana, sans-serif;
+      background-image: url(imeg/baground.jpeg); /* Ganti 'your-image.jpg' dengan path gambarmu */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-blend-mode: overlay; /* Ini akan menggabungkan gambar dengan warna gradien */
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      background: linear-gradient(135deg, #06b2beec, #0bee62);
+      border-radius: 24px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+      max-width: 400px;
+      width: 100%;
+      padding: 40px 30px;
+      text-align: center;
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      transition: transform 0.3s ease;
+    }
+    .container:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(241, 7, 163, 0.5);
+    }
+
+    h1 {
+      font-weight: 800;
+      font-size: 2.6rem;
+      margin-bottom: 24px;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+      letter-spacing: 1.2px;
+    }
+
+    .contact-item {
+      margin-bottom: 24px;
+      font-weight: 600;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 16px;
+      padding: 12px 20px;
+      background: rgba(255 255 255 / 0.15);
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact-item:hover,
+    .contact-item:focus-within {
+      background: rgba(255 255 255 / 0.30);
+      box-shadow: 0 12px 30px rgba(241, 7, 163, 0.6);
+    }
+
+    .contact-item a {
+      color: #fff;
+      text-decoration: none;
+      flex: 1;
+      outline-offset: 4px;
+      transition: color 0.3s ease;
+    }
+
+    .contact-item a:hover,
+    .contact-item a:focus {
+      color: #ffd1e8;
+      text-decoration: underline;
+    }
+
+    /* Icons from Google Material Design (svg) */
+    .icon {
+      width: 28px;
+      height: 28px;
+      flex-shrink: 0;
+      fill: #ffd1e8;
+      transition: fill 0.3s ease;
+    }
+
+    .contact-item:hover .icon,
+    .contact-item:focus-within .icon {
+      fill: #fff;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 16px 12px;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #0d000e;
+      text-align: center;
+      letter-spacing: 0.6px;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 32px 20px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .contact-item {
+        font-size: 1rem;
+        gap: 12px;
+        padding: 10px 16px;
+      }
+
+      .icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container" role="main" aria-label="Kontak Kami Penjahit Dyos">
+    <h1>Kontak Kami</h1>
+
+    <div class="contact-item" tabindex="0">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21 11.36 11.36 0 003.56.57 1 1 0 011 1v3.5a1 1 0 01-1 1A17 17 0 013 6.5a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.56 1 1 0 01-.21 1.11l-2.24 2.22z"/>
+      </svg>
+      <a href="https://wa.me/6282213962480?text=Halo%20Penjahit%20Dyos,%20saya%20tertarik%20dengan%20jasa%20jahit%20timpahan.%20Mohon%20info%20selengkapnya." target="_blank" rel="noopener noreferrer" aria-label="Hubungi via WhatsApp ke nomor 6282213962480">WhatsApp: Dyos penjahit</a>
+    </div>
+
+    <div class="contact-item" tabindex="0">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5zm7.488 3.189v.002l.016.002v.002c.219.024.425.166.56.363l.008.01 2.71 4.522c.133.219.152.486.058.717l-.004.007-2.324 5.04c-.123.267-.406.435-.703.435-.218 0-.423-.094-.576-.252l-.007-.007-1.727-1.899-2.332 1.168c-.208.104-.453.103-.664-.005l-.005-.003-.006-.004c-.199-.109-.333-.31-.377-.543l-.001-.007-.188-1.253L6.54 10.607c-.123-.164-.127-.39-.01-.563l.003-.004 1.445-2.614c.152-.275.534-.374.82-.23l.005.002 1.9 1.004 3.34-1.67c.14-.071.317-.09.484-.077z"/>
+      </svg>
+      <a href="https://www.instagram.com/zai.rst" target="_blank" rel="noopener noreferrer" aria-label="Kunjungi Instagram penjahit Dyos">@ zai.rst</a>
+    </div>
+
+    <div class="contact-item" tabindex="0">
+  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/>
+  </svg>
+  <a href="https://www.google.com/maps/place/rumah/@-0.2389145,100.6400146,58m/data=!3m1!1e3!4m14!1m7!3m6!1s0x2e2ab521461d876d:0x3d3e511e73d33ef2!2sDepot+Air+Telaga+Biru!8m2!3d-0.2389438!4d100.6400449!16s%2Fg%2F11gr5s51w9!3m5!1s0x2e2ab50018b699dd:0x60e4664ad7945a1c!8m2!3d-0.2390106!4d100.6399906!16s%2Fg%2F11vq37wfsg!5m1!1e4?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="Lihat lokasi Penjahit Dyos di Google Maps">
+    Alamat: Jl. kulin padang tiakar mudik kota payakumbuh
+  </a>
+</div>
+
+  <footer>
+    <p>© 2025 Penjahit Dyos. Semua hak dilindungi.</p>
+  </footer>
+
+</body>
+</html>
